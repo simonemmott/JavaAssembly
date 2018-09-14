@@ -19,7 +19,7 @@ public class JavaAssembly<T> extends WidgetAssembly<T>{
 	}
 
 
-	private JavaAssembly(AJavaWidget<T> widget) {
+	protected JavaAssembly(AJavaWidget<T> widget) {
 		super(widget);
 	}
 

@@ -33,7 +33,7 @@ public class JavaAssemblyTests {
 	@Test
 	public void widgetAssembleyOutput() throws IOException {
 
-		WidgetFactory wf = JavaFactory.create("com.k2.JavaAssembly.sample");
+		WidgetFactory wf = JavaWidgetFactory.create("com.k2.JavaAssembly.sample");
 		
 		AJavaWidget<ClassWidgetInterface> cw = (AJavaWidget<ClassWidgetInterface>) wf.get(ClassWidgetInterface.class, "sample");
 		AJavaWidget<FieldWidgetInterface> fw = (AJavaWidget<FieldWidgetInterface>) wf.get(FieldWidgetInterface.class, "sample");
