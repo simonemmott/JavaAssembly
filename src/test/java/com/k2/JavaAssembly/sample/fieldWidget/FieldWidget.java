@@ -24,7 +24,7 @@ public class FieldWidget extends AJavaWidget<FieldWidgetInterface> {
 	}
 
 	@Override
-	public Writer output(WidgetAssemblyNode<?,FieldWidgetInterface> node, FieldWidgetInterface data, Writer out) throws IOException {
+	public Writer output(WidgetAssemblyNode<?,FieldWidgetInterface> node, FieldWidgetInterface data, Writer out, boolean isFirst, boolean isLast) throws IOException {
 		node.println(out, "public {} {};", ClassUtil.getBasenameFromCanonicalName(data.getDataType().getName()), data.getAlias());
 		node.println(out);
 		

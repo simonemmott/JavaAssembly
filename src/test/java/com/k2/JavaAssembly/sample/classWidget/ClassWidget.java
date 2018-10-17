@@ -23,7 +23,7 @@ public class ClassWidget extends AJavaWidget<ClassWidgetInterface> {
 	}
 
 	@Override
-	public Writer output(WidgetAssemblyNode<?,ClassWidgetInterface> node, ClassWidgetInterface data, Writer out) throws IOException {
+	public Writer output(WidgetAssemblyNode<?,ClassWidgetInterface> node, ClassWidgetInterface data, Writer out, boolean isFirst, boolean isLast) throws IOException {
 
 		
 		String name = data.getName();
